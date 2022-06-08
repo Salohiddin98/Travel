@@ -1,1 +1,49 @@
+//Миксины
+@mixin bptablet {
+  @media screen and (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin bpmobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
 
+//обнуление стилей
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 45px;
+  @include bptablet() {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+
+  @include bpmobile() {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+}
