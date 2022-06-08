@@ -1,0 +1,51 @@
+.header {
+  /* .header__logo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  text-transform: uppercase;
+  &__logo {
+    max-height: 64px;
+    max-width: 121px;
+  }
+
+  /* .header__list */
+
+  &__list {
+    display: flex;
+    width: 625px;
+    justify-content: space-between;
+
+    &-link {
+    }
+  }
+
+  &__lang {
+    display: flex;
+    column-gap: 5px;
+    &-item {
+    }
+  }
+
+  /* .header__lang-item */
+
+  /* .header__link */
+
+  &__btn {
+    border-radius: 40px;
+    border: 1px $border solid;
+    padding: 11px 25px;
+    height: 40px;
+
+    &-link {
+      margin-top: 50%;
+      line-height: 0;
+    }
+  }
+}
+
+.lang-active {
+  color: $texthov;
+  transition: 0.5s;
+}

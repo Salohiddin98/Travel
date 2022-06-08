@@ -10,6 +10,13 @@
   }
 }
 
+//переменные
+$mainbg: #e2d3ce;
+$text1: #0c0b10;
+$text2: #fff;
+$texthov: $mainbg;
+$border: #fff;
+
 //обнуление стилей
 * {
   box-sizing: border-box;
@@ -25,6 +32,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: $text1;
 }
 
 h1,
@@ -45,5 +53,30 @@ h2 {
   @include bpmobile() {
     max-width: 320px;
     padding: 0 10px;
+  }
+}
+
+.body {
+  font: 1rem Forum sans-serif;
+}
+
+.linkanimation {
+  a {
+    background-image: linear-gradient($texthov, $texthov);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size 0.3s;
+    border-radius: 1px;
+    padding: 10px 0 5px;
+  }
+  a:hover {
+    background-size: 100% 3px;
+    color: $text2;
+  }
+  .underline {
+    background-size: 100% 3px;
+    transition: color 0.3s;
+    color: $texthov;
   }
 }

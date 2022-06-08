@@ -15,6 +15,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #0c0b10;
 }
 
 h1,
@@ -39,4 +40,30 @@ h2 {
     max-width: 320px;
     padding: 0 10px;
   }
+}
+
+.body {
+  font: 1rem Forum sans-serif;
+}
+
+.linkanimation a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2d3ce), to(#e2d3ce));
+  background-image: linear-gradient(#e2d3ce, #e2d3ce);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+  border-radius: 1px;
+  padding: 10px 0 5px;
+}
+.linkanimation a:hover {
+  background-size: 100% 3px;
+  color: #fff;
+}
+.linkanimation .underline {
+  background-size: 100% 3px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #e2d3ce;
 }
