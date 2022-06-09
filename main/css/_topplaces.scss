@@ -1,0 +1,115 @@
+.topplaces {
+  /* .topplaces__title */
+  background: $maincol;
+
+  &__title {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* .topplaces__box */
+
+  &__content {
+    max-width: 1110px;
+    margin: 0 auto;
+    font-size: 28px;
+    overflow: hidden;
+  }
+
+  /* .topplaces__direction */
+
+  &__dir {
+    max-width: 300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  /* .topplaces__dir-items */
+
+  &__dir-items {
+  }
+
+  /* .topplaces__card-world */
+
+  &__world {
+    display: flex;
+    width: 100%;
+    // flex-wrap: wrap;
+    column-gap: 30px;
+    overflow: hidden;
+  }
+
+  /* .topplaces__card-uz */
+
+  &__uz {
+    display: none;
+  }
+
+  /* .topplaces__card-items */
+
+  &__card-items {
+    position: relative;
+    width: 350px;
+    height: 570px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  &__card-box {
+    position: absolute;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: $text2;
+    bottom: 0;
+    padding: 0 35px 35px;
+    background: $card-lgrad;
+  }
+
+  /* .topplaces__card-img */
+
+  &__card-img {
+  }
+
+  /* .topplaces__card-loction */
+
+  &__card-loction {
+    position: relative;
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  &__card-loction::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 12px;
+    left: -12px;
+    background-image: url('../../assets/svg/location.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* .topplaces__card-title */
+
+  &__card-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  /* .topplaces__card-info */
+
+  &__card-info {
+    font-size: 12px;
+  }
+
+  /* .topplaces__card-price */
+
+  &__card-price {
+    font-size: 24px;
+  }
+}

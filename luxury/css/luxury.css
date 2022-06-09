@@ -6,7 +6,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font: 1rem Forum;
 }
 
 ul {
@@ -23,6 +22,7 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 .container {
@@ -32,6 +32,7 @@ h2 {
 
 .body {
   background-color: rgba(226, 211, 206, 0.5);
+  font: 1rem Forum;
 }
 
 .linkanimation a {
@@ -95,11 +96,11 @@ h2 {
      -moz-column-gap: 5px;
           column-gap: 5px;
 }
-.choice__item:nth-child(odd) {
+.choice__item {
   cursor: pointer;
   padding: 0 3px;
 }
-.choice__item:nth-child(odd):hover {
+.choice__item:hover {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;

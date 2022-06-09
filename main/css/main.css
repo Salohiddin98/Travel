@@ -6,7 +6,6 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font: 1rem Forum;
 }
 
 ul {
@@ -23,6 +22,7 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 .container {
@@ -32,6 +32,7 @@ h2 {
 
 .body {
   background-color: rgba(226, 211, 206, 0.5);
+  font: 1rem Forum;
 }
 
 .linkanimation a {
@@ -95,11 +96,11 @@ h2 {
      -moz-column-gap: 5px;
           column-gap: 5px;
 }
-.choice__item:nth-child(odd) {
+.choice__item {
   cursor: pointer;
   padding: 0 3px;
 }
-.choice__item:nth-child(odd):hover {
+.choice__item:hover {
   color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -224,14 +225,99 @@ h2 {
   background: #e2d3ce;
   /* .topplaces__box */
   /* .topplaces__direction */
-  /* .topplaces__direction-uz */
-  /* .topplaces__direction-world */
-  /* .topplaces__card-uz */
+  /* .topplaces__dir-items */
   /* .topplaces__card-world */
+  /* .topplaces__card-uz */
   /* .topplaces__card-items */
+  /* .topplaces__card-img */
+  /* .topplaces__card-loction */
+  /* .topplaces__card-title */
+  /* .topplaces__card-info */
+  /* .topplaces__card-price */
 }
 .topplaces__title {
   max-width: 300px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 50px;
+}
+.topplaces__content {
+  max-width: 1110px;
+  margin: 0 auto;
+  font-size: 28px;
+  overflow: hidden;
+}
+.topplaces__dir {
+  max-width: 300px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+.topplaces__world {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  overflow: hidden;
+}
+.topplaces__uz {
+  display: none;
+}
+.topplaces__card-items {
+  position: relative;
+  width: 350px;
+  height: 570px;
+  border-radius: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+}
+.topplaces__card-box {
+  position: absolute;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #fff;
+  bottom: 0;
+  padding: 0 35px 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#0b2034));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
+}
+.topplaces__card-loction {
+  position: relative;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.topplaces__card-loction::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 12px;
+  left: -12px;
+  background-image: url("../../assets/svg/location.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topplaces__card-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.topplaces__card-info {
+  font-size: 12px;
+}
+.topplaces__card-price {
+  font-size: 24px;
 }
