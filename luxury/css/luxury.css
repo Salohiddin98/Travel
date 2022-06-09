@@ -55,3 +55,28 @@ h2 {
   transition: color 0.3s;
   color: #fff;
 }
+
+.rhombus {
+  position: absolute;
+  height: 80px;
+  width: 150px;
+  -webkit-backdrop-filter: blur(0.5px);
+          backdrop-filter: blur(0.5px);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-transform: rotate(75deg) skewX(58deg);
+          transform: rotate(75deg) skewX(58deg);
+  padding: 1px;
+  top: 40%;
+  left: 45%;
+  z-index: 30;
+}
+
+.rhombus::after {
+  content: " ";
+  height: 85px;
+  width: 155px;
+  position: absolute;
+  border: 1px #79655e solid;
+  -webkit-transform: translate(-50%, -4.5%);
+          transform: translate(-50%, -4.5%);
+}

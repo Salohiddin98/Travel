@@ -84,3 +84,23 @@ h2 {
     color: $texthov;
   }
 }
+.rhombus {
+  position: absolute;
+  height: 80px;
+  width: 150px;
+  backdrop-filter: blur(0.5px);
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(75deg) skewX(58deg);
+  padding: 1px;
+  top: 40%;
+  left: 45%;
+  z-index: 30;
+}
+.rhombus::after {
+  content: ' ';
+  height: 85px;
+  width: 155px;
+  position: absolute;
+  border: 1px $boxborder solid;
+  transform: translate(-50%, -4.5%);
+}
