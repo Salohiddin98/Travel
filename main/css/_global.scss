@@ -104,3 +104,26 @@ h2 {
   border: 1px $boxborder solid;
   transform: translate(-50%, -4.5%);
 }
+
+.title {
+  font-size: 60px;
+  line-height: 58px;
+  color: $text1;
+}
+
+.choice {
+  display: flex;
+  column-gap: 5px;
+
+  &__item:nth-child(odd) {
+    cursor: pointer;
+    padding: 0 3px;
+  }
+  &__item:nth-child(odd):hover {
+    color: $texthov;
+    transition: 0.5s;
+  }
+  &__item_active {
+    color: $texthov;
+  }
+}

@@ -25,23 +25,6 @@
     }
   }
 
-  &__lang {
-    display: flex;
-    column-gap: 5px;
-    &-item:nth-child(odd) {
-      cursor: pointer;
-      padding: 0 3px;
-    }
-    &-item:nth-child(odd):hover {
-      color: $texthov;
-      transition: 0.5s;
-    }
-  }
-
-  /* .header__lang-item */
-
-  /* .header__link */
-
   &__btn {
     border-radius: 40px;
     border: 1px $border solid;
@@ -58,7 +41,4 @@
     border-color: $text1;
     transition: 1s;
   }
-}
-.lang-active {
-  color: $texthov;
 }

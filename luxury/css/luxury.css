@@ -80,3 +80,30 @@ h2 {
   -webkit-transform: translate(-50%, -4.5%);
           transform: translate(-50%, -4.5%);
 }
+
+.title {
+  font-size: 60px;
+  line-height: 58px;
+  color: #0c0b10;
+}
+
+.choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+}
+.choice__item:nth-child(odd) {
+  cursor: pointer;
+  padding: 0 3px;
+}
+.choice__item:nth-child(odd):hover {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.choice__item_active {
+  color: #fff;
+}
