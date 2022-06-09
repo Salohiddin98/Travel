@@ -266,6 +266,14 @@ h2 {
   overflow: hidden;
 }
 .topplaces__uz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  overflow: hidden;
   display: none;
 }
 .topplaces__card-items {
@@ -277,9 +285,16 @@ h2 {
       flex-shrink: 0;
   overflow: hidden;
 }
+.topplaces__card-items:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 .topplaces__card-box {
   position: absolute;
   height: 300px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,17 +311,29 @@ h2 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#0b2034));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
 }
+.topplaces__card-img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.topplaces__uz .topplaces__card-img {
+  max-height: 570px;
+  -webkit-transform: translateX(-27%);
+          transform: translateX(-27%);
+}
 .topplaces__card-loction {
   position: relative;
-  font-size: 12px;
-  margin-left: 12px;
+  font-size: 16px;
+  margin-left: 16px;
+  margin-bottom: 10px;
 }
 .topplaces__card-loction::before {
   content: "";
   position: absolute;
-  width: 9px;
-  height: 12px;
-  left: -12px;
+  width: 12px;
+  height: 16px;
+  left: -16px;
   background-image: url("../../assets/svg/location.svg");
   background-repeat: no-repeat;
   background-size: cover;
