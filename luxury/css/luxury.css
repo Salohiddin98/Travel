@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font: 1rem Forum;
 }
 
 ul {
@@ -27,28 +28,15 @@ h2 {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 45px;
-}
-@media screen and (max-width: 1439px) {
-  .container {
-    max-width: 768px;
-    padding: 0 30px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 320px;
-    padding: 0 10px;
-  }
 }
 
 .body {
-  font: 1rem Forum sans-serif;
+  background-color: rgba(226, 211, 206, 0.5);
 }
 
 .linkanimation a {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e2d3ce), to(#e2d3ce));
-  background-image: linear-gradient(#e2d3ce, #e2d3ce);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 3px;
@@ -65,5 +53,5 @@ h2 {
   background-size: 100% 3px;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  color: #e2d3ce;
+  color: #fff;
 }

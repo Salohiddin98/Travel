@@ -11,11 +11,13 @@
 }
 
 //переменные
-$mainbg: #e2d3ce;
+$mainbg: rgba(226, 211, 206, 0.5);
+$maincol: #e2d3ce;
 $text1: #0c0b10;
 $text2: #fff;
-$texthov: $mainbg;
+$texthov: #fff;
 $border: #fff;
+$boxborder: #79655e;
 
 //обнуление стилей
 * {
@@ -23,6 +25,7 @@ $border: #fff;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font: 1rem Forum;
 }
 
 ul {
@@ -44,20 +47,21 @@ h2 {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 45px;
-  @include bptablet() {
-    max-width: 768px;
-    padding: 0 30px;
-  }
+  // padding: 0 45px;
+  // overflow: hidden;
+  // @include bptablet() {
+  //   max-width: 768px;
+  //   padding: 0 30px;
+  // }
 
-  @include bpmobile() {
-    max-width: 320px;
-    padding: 0 10px;
-  }
+  // @include bpmobile() {
+  //   max-width: 320px;
+  //   padding: 0 10px;
+  // }
 }
 
 .body {
-  font: 1rem Forum sans-serif;
+  background-color: $mainbg;
 }
 
 .linkanimation {
