@@ -115,11 +115,11 @@ h2 {
   display: flex;
   column-gap: 5px;
 
-  &__item:nth-child(odd) {
+  &__item {
     cursor: pointer;
     padding: 0 3px;
   }
-  &__item:nth-child(odd):hover {
+  &__item:hover {
     color: $texthov;
     transition: 0.5s;
   }
