@@ -18,6 +18,13 @@ $text2: #fff;
 $texthov: #fff;
 $border: #fff;
 $boxborder: #79655e;
+$block-grad: linear-gradient(
+  180deg,
+  rgba(226, 211, 206, 0) 1%,
+  rgba(226, 211, 206, 0.71) 40%,
+  #e2d3ce 100%
+);
+$card-lgrad: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
 
 //обнуление стилей
 * {
@@ -25,9 +32,7 @@ $boxborder: #79655e;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font: 1rem Forum;
 }
-
 ul {
   list-style: none;
 }
@@ -42,6 +47,7 @@ h1,
 h2 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 .container {
@@ -62,6 +68,7 @@ h2 {
 
 .body {
   background-color: $mainbg;
+  font: 1rem Forum;
 }
 
 .linkanimation {
