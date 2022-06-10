@@ -164,7 +164,7 @@ h2 {
 
 .header {
   /* .header__logo */
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,8 +178,13 @@ h2 {
   padding: 0 45px;
   top: 25px;
   text-transform: uppercase;
-  z-index: 50;
+  z-index: 10;
   /* .header__list */
+}
+.header_bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
 }
 .header__logo {
   max-height: 64px;
@@ -193,147 +198,6 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header {
-  /* .header_bg */
-  position: relative;
-  z-index: 10;
-}
-.header_bg {
-  position: absolute;
-  z-index: -1;
-  left: 0;
-}
-
-.topplaces {
-  /* .topplaces__title */
-  background: #e2d3ce;
-  margin-bottom: 125px;
-  z-index: 25;
-  /* .topplaces__box */
-  /* .topplaces__direction */
-  /* .topplaces__card-world */
-  /* .topplaces__card-uz */
-  /* .topplaces__card-items */
-  /* .topplaces__card-img */
-  /* .topplaces__card-loction */
-  /* .topplaces__card-title */
-  /* .topplaces__card-info */
-  /* .topplaces__card-price */
-}
-.topplaces__title {
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.topplaces__content {
-  max-width: 1110px;
-  margin: 0 auto;
-  font-size: 28px;
-  overflow: hidden;
-}
-.topplaces__dir {
-  max-width: 300px;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 50px;
-}
-.topplaces__world {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  overflow: hidden;
-}
-.topplaces__uz {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  overflow: hidden;
-  display: none;
-}
-.topplaces__card-items {
-  position: relative;
-  width: 350px;
-  height: 570px;
-  border-radius: 10px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  overflow: hidden;
-}
-.topplaces__card-items:hover {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.topplaces__card-box {
-  position: absolute;
-  height: 300px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  color: #fff;
-  bottom: 0;
-  padding: 0 35px 35px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#0b2034));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
-}
-.topplaces__card-img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-.topplaces__uz .topplaces__card-img {
-  max-height: 570px;
-  -webkit-transform: translateX(-27%);
-          transform: translateX(-27%);
-}
-.topplaces__card-loction {
-  position: relative;
-  font-size: 16px;
-  margin-left: 16px;
-  margin-bottom: 10px;
-}
-.topplaces__card-loction::before {
-  content: "";
-  position: absolute;
-  width: 12px;
-  height: 16px;
-  left: -16px;
-  background-image: url("../../assets/svg/location.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.topplaces__card-title {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-.topplaces__card-info {
-  font-size: 12px;
-}
-.topplaces__card-price {
-  font-size: 24px;
 }
 
 .topplaces {
