@@ -24,21 +24,4 @@
     &-link {
     }
   }
-
-  &__btn {
-    border-radius: 40px;
-    border: 1px $border solid;
-    padding: 11px 25px;
-    height: 40px;
-
-    &-link {
-      margin-top: 50%;
-      line-height: 0;
-    }
-  }
-  &__btn:hover {
-    background-color: $maincol;
-    border-color: $text1;
-    transition: 1s;
-  }
 }

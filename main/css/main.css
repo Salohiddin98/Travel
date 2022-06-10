@@ -109,6 +109,18 @@ h2 {
   color: #fff;
 }
 
+.btn {
+  border-radius: 40px;
+  border: 1px #fff solid;
+  padding: 11px 25px;
+}
+.btn:hover {
+  background-color: #e2d3ce;
+  border-color: #0c0b10;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .header {
   /* .header__logo */
   position: absolute;
@@ -141,23 +153,6 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.header__btn {
-  border-radius: 40px;
-  border: 1px #fff solid;
-  padding: 11px 25px;
-  height: 40px;
-}
-.header__btn-link {
-  margin-top: 50%;
-  line-height: 0;
-}
-.header__btn:hover {
-  background-color: #e2d3ce;
-  border-color: #0c0b10;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
 .hero {
   /* .hero_title */
   position: relative;
@@ -347,4 +342,14 @@ h2 {
 }
 .topplaces__card-price {
   font-size: 24px;
+}
+
+.luxury {
+  /* .luxury__bg */
+  /* .luxury__bg-img */
+  /* .luxury__box */
+  /* .luxury__card */
+  /* .luxury__card-title */
+  /* .luxury__card-link */
+  /* .luxury__card-text */
 }

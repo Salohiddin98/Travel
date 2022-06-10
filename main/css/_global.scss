@@ -134,3 +134,14 @@ h2 {
     color: $texthov;
   }
 }
+
+.btn {
+  border-radius: 40px;
+  border: 1px $border solid;
+  padding: 11px 25px;
+  &:hover {
+    background-color: $maincol;
+    border-color: $text1;
+    transition: 1s;
+  }
+}
