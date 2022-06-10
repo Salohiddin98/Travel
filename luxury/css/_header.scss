@@ -1,0 +1,10 @@
+.header {
+  /* .header_bg */
+  position: relative;
+
+  &_bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+  }
+}
