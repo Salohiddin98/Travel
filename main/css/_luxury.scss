@@ -95,12 +95,13 @@
 
   /* .luxury__card-link */
 
-  &__card-link {
-  }
-
   /* .luxury__card-bg */
 
   &__card-bg {
+    position: absolute;
+    height: 350px;
+    width: 100%;
+    background: $card-top;
   }
 
   /* .luxury__card-text */
@@ -111,10 +112,5 @@
     margin: 65px 50px 0;
     font-size: 36px;
     color: $text2;
-  }
-
-  /* .luxury__card-img */
-
-  &__card-img {
   }
 }

@@ -26,7 +26,8 @@ $block-grad: linear-gradient(
   rgba(226, 211, 206, 0.71) 40%,
   #e2d3ce 100%
 );
-$card-lgrad: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
+$card-bottom: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
+$card-top: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
 $pack-lgrad: linear-gradient(
   180deg,
   #e2d3ce 15%,
