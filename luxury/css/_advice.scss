@@ -1,0 +1,29 @@
+.advice {
+  /* .advice_box */
+  position: relative;
+  background: $maincol;
+  padding: 150px 0;
+  margin-top: -150px;
+
+  &_box {
+    max-width: $content;
+    max-height: 565px;
+    margin: 0 auto;
+  }
+
+  /* .advice__title */
+
+  &__title {
+    position: absolute;
+    color: $text2;
+    max-width: 520px;
+    top: 28%;
+    left: 25%;
+  }
+
+  /* .advice__img */
+
+  &__img {
+    border-radius: 10px;
+  }
+}
