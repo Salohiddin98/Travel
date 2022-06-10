@@ -165,6 +165,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 .hero {
   /* .hero_title */
   position: relative;
@@ -234,7 +235,6 @@ h2 {
   z-index: 25;
   /* .topplaces__box */
   /* .topplaces__direction */
-  /* .topplaces__dir-items */
   /* .topplaces__card-world */
   /* .topplaces__card-uz */
   /* .topplaces__card-items */
