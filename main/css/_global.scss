@@ -17,6 +17,7 @@ $text1: #0c0b10;
 $text2: #fff;
 $texthov: #fff;
 $border: #fff;
+$border1: #0c0b10;
 $boxborder: #79655e;
 $block-grad: linear-gradient(
   180deg,
@@ -139,9 +140,19 @@ h2 {
   border-radius: 40px;
   border: 1px $border solid;
   padding: 11px 25px;
+  text-transform: uppercase;
   &:hover {
     background-color: $maincol;
     border-color: $text1;
-    transition: 1s;
+    transition: 0.75s;
+  }
+}
+.btn_white {
+  border-color: $border1;
+  padding: 5px 30px;
+  &:hover {
+    background-color: $maincol;
+    border-color: $border;
+    transition: 0.75s;
   }
 }
