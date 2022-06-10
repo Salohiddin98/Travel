@@ -108,3 +108,27 @@ h2 {
 .choice__item_active {
   color: #fff;
 }
+
+.btn {
+  border-radius: 40px;
+  border: 1px #fff solid;
+  padding: 11px 25px;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background-color: #e2d3ce;
+  border-color: #0c0b10;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.btn_white {
+  border-color: #0c0b10;
+  padding: 5px 30px;
+}
+.btn_white:hover {
+  background-color: #e2d3ce;
+  border-color: #fff;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
