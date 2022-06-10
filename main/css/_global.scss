@@ -118,14 +118,16 @@ h2 {
   top: 40%;
   left: 45%;
   z-index: 30;
-  &::after {
-    content: ' ';
-    height: 85px;
-    width: 155px;
-    position: absolute;
-    border: 1px $boxborder solid;
-    transform: translate(-50%, -4.5%);
-  }
+}
+
+.rhombus-horiz {
+  position: absolute;
+  height: 175px;
+  width: 275px;
+  backdrop-filter: blur(1.5px);
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+  padding: 1px;
 }
 
 .title {
