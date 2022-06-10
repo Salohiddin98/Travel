@@ -26,6 +26,19 @@ $block-grad: linear-gradient(
   #e2d3ce 100%
 );
 $card-lgrad: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
+$pack-lgrad: linear-gradient(
+  180deg,
+  #e2d3ce 15%,
+  #c9c8d8 49.65%,
+  #d4d8c6 78.29%,
+  #e2d3ce 100.92%
+);
+$pack-lgrad1: linear-gradient(
+  180deg,
+  rgba(226, 211, 206, 0) 0%,
+  #91c8bb 40.54%,
+  #d3d7c6 100%
+);
 
 //обнуление стилей
 * {

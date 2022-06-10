@@ -1,6 +1,8 @@
 .topplaces {
   /* .topplaces__title */
   background: $maincol;
+  margin-bottom: 125px;
+  z-index: 25;
 
   &__title {
     max-width: 300px;
