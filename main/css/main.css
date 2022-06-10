@@ -459,3 +459,14 @@ h2 {
   font-size: 36px;
   color: #fff;
 }
+.book {
+  /* .book__title */
+  position: relative;
+  z-index: 25;
+  margin: 110px auto 0;
+  max-width: 1110px;
+  /* .book__box */
+  /* .book__card */
+  /* .book__text */
+  /* .book__img */
+}
