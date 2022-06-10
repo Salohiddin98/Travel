@@ -118,14 +118,14 @@ h2 {
   top: 40%;
   left: 45%;
   z-index: 30;
-}
-.rhombus::after {
-  content: ' ';
-  height: 85px;
-  width: 155px;
-  position: absolute;
-  border: 1px $boxborder solid;
-  transform: translate(-50%, -4.5%);
+  &::after {
+    content: ' ';
+    height: 85px;
+    width: 155px;
+    position: absolute;
+    border: 1px $boxborder solid;
+    transform: translate(-50%, -4.5%);
+  }
 }
 
 .title {
@@ -159,15 +159,42 @@ h2 {
   &:hover {
     background-color: $maincol;
     border-color: $text1;
-    transition: 0.75s;
+    transition: 0.65s;
   }
 }
 .btn_white {
   border-color: $border1;
   padding: 5px 30px;
   &:hover {
-    background-color: $text2;
+    background-color: $border;
     border-color: $border;
-    transition: 0.75s;
+  }
+}
+.btn_black {
+  color: $border;
+  border-color: $border1;
+  background: $text1;
+  padding: 5px 30px;
+  &:hover {
+    color: $text1;
+    background-color: $border;
+    border-color: $border;
+  }
+}
+
+.frame {
+  position: relative;
+  border-radius: 10px;
+  border: 1px $border solid;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 2%;
+    height: 103%;
+    width: 96%;
+    border-radius: 10px;
+    border: 1px $border solid;
+    z-index: -1;
   }
 }

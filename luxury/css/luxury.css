@@ -71,7 +71,6 @@ h2 {
   left: 45%;
   z-index: 30;
 }
-
 .rhombus::after {
   content: " ";
   height: 85px;
@@ -118,8 +117,8 @@ h2 {
 .btn:hover {
   background-color: #e2d3ce;
   border-color: #0c0b10;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+  -webkit-transition: 0.65s;
+  transition: 0.65s;
 }
 
 .btn_white {
@@ -129,6 +128,33 @@ h2 {
 .btn_white:hover {
   background-color: #fff;
   border-color: #fff;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
+}
+
+.btn_black {
+  color: #fff;
+  border-color: #0c0b10;
+  background: #0c0b10;
+  padding: 5px 30px;
+}
+.btn_black:hover {
+  color: #0c0b10;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.frame {
+  position: relative;
+  border-radius: 10px;
+  border: 1px #fff solid;
+}
+.frame::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 2%;
+  height: 103%;
+  width: 96%;
+  border-radius: 10px;
+  border: 1px #fff solid;
+  z-index: -1;
 }
