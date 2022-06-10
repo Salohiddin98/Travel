@@ -1,0 +1,80 @@
+.book {
+  /* .book__title */
+  position: relative;
+  z-index: 25;
+  margin: 325px auto 0;
+  max-width: $content;
+
+  &__bg {
+    position: absolute;
+    background: $maincol;
+    width: 1440px;
+    height: 470px;
+    right: -165px;
+    top: 375px;
+    z-index: 1;
+  }
+
+  &__title {
+    max-width: 185px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+
+  /* .book__box */
+
+  &__box {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  /* .book__card */
+
+  &__card {
+    position: relative;
+    max-width: 540px;
+    max-height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 25;
+  }
+  &__card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+
+  /* .book__text */
+
+  &__text {
+    position: absolute;
+    font-size: 44px;
+    color: $text2;
+    left: 33%;
+    top: 35%;
+    // max-width: 200px;
+    text-align: center;
+    z-index: 10;
+  }
+  &__card:nth-child(2) &__text,
+  &__card:nth-child(3) &__text,
+  &__card:nth-child(4) &__text,
+  &__card:nth-child(6) &__text {
+    transform: translateX(25%);
+  }
+
+  &__card-rhombus {
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    backdrop-filter: blur(2.5px);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+    padding: 1px;
+    top: 20%;
+    left: 7%;
+    z-index: 5;
+  }
+}
