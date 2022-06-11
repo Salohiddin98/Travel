@@ -57,6 +57,10 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: $text1;
+  &:hover {
+    color: $text2;
+    transition: 0.5s;
+  }
 }
 
 h1,

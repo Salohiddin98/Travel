@@ -17,6 +17,11 @@ a {
   cursor: pointer;
   color: #0c0b10;
 }
+a:hover {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 h1,
 h2 {

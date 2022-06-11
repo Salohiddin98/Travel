@@ -1,0 +1,73 @@
+.info {
+  /* .info__box */
+  position: relative;
+  z-index: 25;
+  text-align: center;
+  margin: 200px 0 0;
+  padding: 0 0 100px;
+  background: $maincol;
+  &__box {
+    margin: 100px auto 0;
+    max-width: $content;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .info__title */
+
+  &__title {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* .info__phone */
+
+  &__phone,
+  &__location {
+    width: 540px;
+    height: 280px;
+    padding-top: 25px;
+    border-radius: 10px;
+    border: 1px $border solid;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(130px);
+    text-align: center;
+  }
+
+  /* .info__text */
+
+  &__text {
+    margin-top: 10px;
+  }
+
+  /* .info__num */
+
+  &__num {
+    margin-top: 40px;
+  }
+  &__adress {
+    margin: 25px 0 25px;
+  }
+
+  /* .info__adress */
+
+  &__num,
+  &__adress {
+    font-size: 40px;
+  }
+
+  &__mail {
+    font-size: 24px;
+  }
+
+  /* .info__map */
+
+  &__map {
+    max-width: 666px;
+    max-height: 505px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px $border solid;
+  }
+}

@@ -1,0 +1,31 @@
+.header {
+  /* .header__logo */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  padding: 0 45px;
+  top: 25px;
+  text-transform: uppercase;
+  z-index: 10;
+
+  &_bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+  }
+
+  &__logo {
+    max-height: 64px;
+    max-width: 121px;
+  }
+
+  /* .header__list */
+
+  &__list {
+    display: flex;
+    width: 625px;
+    justify-content: space-between;
+  }
+}
