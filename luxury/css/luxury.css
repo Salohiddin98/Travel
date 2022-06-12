@@ -244,15 +244,18 @@ h2 {
   }
 
   .btn {
-    padding: 6px 15px;
+    padding: 3px 8px;
+    font-size: 12px;
   }
 
   .btn_white {
-    padding: 5px 30px;
+    padding: 3px 15px;
+    font-size: 12px;
   }
 
   .btn_black {
-    padding: 5px 30px;
+    padding: 3px 15px;
+    font-size: 12px;
   }
 }
 .header {
