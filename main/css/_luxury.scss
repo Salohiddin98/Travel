@@ -8,7 +8,6 @@
     height: 1385px;
     top: 0;
     background: $pack-lgrad;
-
     z-index: 5;
     top: -125px;
   }
@@ -19,6 +18,7 @@
     position: absolute;
     bottom: -700px;
     z-index: 10;
+    max-width: 100%;
   }
 
   /* .luxury__bg-bottom */
@@ -47,7 +47,7 @@
   &__box {
     position: relative;
     margin: 0 auto;
-    max-width: $content;
+    max-width: 1110px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -113,4 +113,59 @@
     font-size: 36px;
     color: $text2;
   }
+}
+
+@include bpnetbook() {
+  .luxury {
+    /* .luxury__bg-top */
+
+    &__bg-top {
+      height: 1700px;
+      top: 0;
+      top: -50px;
+    }
+
+    &__bg-img {
+      bottom: -585px;
+    }
+
+    /* .luxury__bg-bottom */
+
+    &__bg-img_grad {
+      height: 400px;
+      bottom: -225px;
+    }
+    &__bg-bottom {
+      position: absolute;
+      width: 100%;
+      height: 350px;
+      z-index: 20;
+      bottom: -585px;
+      background: $block-grad;
+    }
+    &__box {
+      max-width: 730px;
+      gap: 20px;
+    }
+
+    /* .luxury__card */
+
+    &__card {
+      width: 350px;
+      max-height: 570px;
+    }
+    &__card:nth-child(2) {
+      margin-top: 0px;
+    }
+    &__card:nth-child(4),
+    &__card:nth-child(6) {
+      margin-top: 0px;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
 }

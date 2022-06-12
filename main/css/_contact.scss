@@ -7,6 +7,7 @@
   &__bg {
     position: absolute;
     top: -250px;
+    width: 100%;
   }
 
   &__bg-top,
@@ -47,10 +48,6 @@
   &__title {
     margin-bottom: 30px;
   }
-  /* .contact__form */
-
-  &__form {
-  }
 
   /* .contact__phone */
 
@@ -84,4 +81,52 @@
     height: 55px;
     text-transform: uppercase;
   }
+}
+
+@include bpnetbook() {
+  .contact {
+    /* .contact__bg */
+    position: relative;
+    margin-top: 265px;
+    height: 570px;
+
+    &__bg {
+      position: absolute;
+      top: -200px;
+      width: 100%;
+    }
+
+    &__bg-top {
+      transform: rotateX(180deg);
+      top: -235px;
+      height: 200px;
+    }
+
+    &__bg-bottom {
+      height: 200px;
+      bottom: 0;
+    }
+
+    /* .contact__box */
+    &__wrapper {
+      margin: 375px auto 0;
+      max-width: 520px;
+      height: 425px;
+      text-align: center;
+      background: rgba(226, 211, 206, 0.2);
+      backdrop-filter: blur(9px);
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      margin: 85px auto 0;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
 }

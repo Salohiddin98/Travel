@@ -169,6 +169,48 @@ h2 {
   z-index: -1;
 }
 
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .rhombus {
+    height: 60px;
+    width: 120px;
+    -webkit-transform: rotate(75deg) skewX(58deg);
+            transform: rotate(75deg) skewX(58deg);
+    top: 40%;
+    left: 45%;
+  }
+
+  .rhombus-horiz {
+    position: absolute;
+    height: 175px;
+    width: 275px;
+    -webkit-backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(1.5px);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+            transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+    padding: 1px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 58px;
+    color: #0c0b10;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+}
 .header {
   /* .header__logo */
   position: relative;

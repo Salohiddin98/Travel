@@ -3,7 +3,7 @@
   position: relative;
   z-index: 25;
   margin: 325px auto 0;
-  max-width: $content;
+  max-width: 1110px;
 
   &__bg {
     position: absolute;
@@ -77,4 +77,40 @@
     left: 7%;
     z-index: 5;
   }
+}
+
+@include bpnetbook() {
+  .book {
+    /* .book__title */
+    margin: 250px auto 0;
+    max-width: 730px;
+
+    &__bg {
+      width: 1024px;
+      height: 1150px;
+      right: -147px;
+      top: 335px;
+    }
+
+    &__title {
+      margin-bottom: 70px;
+    }
+
+    /* .book__box */
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      column-gap: 0;
+      row-gap: 25px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
 }

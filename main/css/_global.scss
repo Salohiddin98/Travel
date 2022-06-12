@@ -1,6 +1,12 @@
 //Миксины
-@mixin bptablet {
+
+@mixin bpnetbook {
   @media screen and (max-width: 1439px) {
+    @content;
+  }
+}
+@mixin bptablet {
+  @media screen and (max-width: 1023px) {
     @content;
   }
 }
@@ -19,7 +25,6 @@ $texthov: #fff;
 $border: #fff;
 $border1: #0c0b10;
 $boxborder: #79655e;
-$content: 1110px;
 $block-grad: linear-gradient(
   180deg,
   rgba(226, 211, 206, 0) 1%,
@@ -73,17 +78,6 @@ h2 {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  // padding: 0 45px;
-  // overflow: hidden;
-  // @include bptablet() {
-  //   max-width: 768px;
-  //   padding: 0 30px;
-  // }
-
-  // @include bpmobile() {
-  //   max-width: 320px;
-  //   padding: 0 10px;
-  // }
 }
 
 .body {
@@ -204,5 +198,48 @@ h2 {
     border-radius: 10px;
     border: 1px $border solid;
     z-index: -1;
+  }
+}
+@include bpnetbook() {
+  $content: 700px;
+
+  .container {
+    max-width: 1024px;
+  }
+
+  .rhombus {
+    height: 60px;
+    width: 120px;
+    transform: rotate(75deg) skewX(58deg);
+    top: 40%;
+    left: 45%;
+  }
+
+  .rhombus-horiz {
+    position: absolute;
+    height: 175px;
+    width: 275px;
+    backdrop-filter: blur(1.5px);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+    padding: 1px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 58px;
+    color: $text1;
+  }
+}
+
+@include bptablet() {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@include bpmobile() {
+  .container {
+    max-width: 320px;
   }
 }

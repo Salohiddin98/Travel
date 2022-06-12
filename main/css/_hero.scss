@@ -75,3 +75,61 @@
     background: $block-grad;
   }
 }
+
+@include bpnetbook() {
+  .hero {
+    &_title {
+      max-width: 835px;
+      font-size: 148px;
+      line-height: 110px;
+      letter-spacing: 5px;
+      top: 17%;
+      left: 12%;
+    }
+
+    /* .hero__subtitle */
+
+    &__subtitle {
+      font-size: 110px;
+      z-index: 16;
+      top: 47%;
+      left: 28%;
+      letter-spacing: 5px;
+    }
+
+    /* .hero__img */
+
+    &__img {
+      height: 684px;
+    }
+
+    /* .hero__img-item */
+
+    &__img-item {
+      left: 0;
+      bottom: 0;
+      width: 1024px;
+    }
+
+    &__img-item:nth-child(4) {
+      z-index: 20;
+      bottom: 20px;
+    }
+    &__rhombus {
+      top: 28%;
+      left: 10%;
+    }
+
+    &__gradient {
+      height: 300px;
+      bottom: -5px;
+      background: $block-grad;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
+}

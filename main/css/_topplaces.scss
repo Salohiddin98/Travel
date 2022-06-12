@@ -14,7 +14,7 @@
   /* .topplaces__box */
 
   &__content {
-    max-width: $content;
+    max-width: 1110px;
     margin: 0 auto;
     font-size: 28px;
     overflow: hidden;
@@ -126,4 +126,53 @@
   &__card-price {
     font-size: 24px;
   }
+}
+
+@include bpnetbook() {
+  .topplaces {
+    /* .topplaces__title */
+
+    margin-bottom: 50px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    /* .topplaces__box */
+
+    &__content {
+      max-width: 730px;
+      margin: 0 auto;
+      font-size: 28px;
+      overflow: hidden;
+    }
+
+    /* .topplaces__card-world */
+
+    &__world {
+      display: flex;
+      width: 100%;
+      // flex-wrap: wrap;
+      column-gap: 30px;
+      overflow: hidden;
+      // display: none;
+    }
+
+    /* .topplaces__card-uz */
+
+    &__uz {
+      display: flex;
+      width: 100%;
+      // flex-wrap: wrap;
+      column-gap: 30px;
+      overflow: hidden;
+      display: none;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
 }

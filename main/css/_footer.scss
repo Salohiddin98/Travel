@@ -46,3 +46,18 @@
 
   /* .footer__list-item */
 }
+
+@include bpnetbook() {
+  .footer {
+    &__bg-top {
+      height: 150px;
+      top: -155px;
+    }
+  }
+}
+
+@include bptablet() {
+}
+
+@include bpmobile() {
+}
