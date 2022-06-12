@@ -12,7 +12,6 @@
 
   &__logo {
     max-height: 64px;
-    max-width: 121px;
   }
 
   /* .header__list */
@@ -32,7 +31,6 @@
 
     &__logo-img {
       max-height: 44px;
-      max-width: 101px;
     }
     /* .header__list */
     &__list {
@@ -43,6 +41,21 @@
 }
 
 @include bptablet() {
+  .header {
+    /* .header__logo */
+    width: 100%;
+    padding: 0 10px;
+    font-size: 12px;
+
+    &__logo-img {
+      max-height: 40px;
+    }
+    /* .header__list */
+    &__list {
+      display: flex;
+      width: 400px;
+    }
+  }
 }
 
 @include bpmobile() {
