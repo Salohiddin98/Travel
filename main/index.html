@@ -13,23 +13,23 @@
 <body class="body container">
   <header class="header ">
     <div class="header__logo">
-      <img src="../assets/svg/logo.svg" alt="Agency logo">
+      <a href="#no_scroll"> <img src="../assets/svg/logo.svg" alt="Agency logo"></a>
     </div>
     <ul class="header__list">
       <li class="header__list-item linkanimation">
-        <a class="header__list-link " href="">Home</a>
+        <a class="header__list-link " href="#no_scroll">Home</a>
       </li>
       <li class="header__list-item linkanimation">
-        <a class="header__list-link " href="">Luxury packages</a>
+        <a class="header__list-link " href="#luxpack">Luxury packages</a>
       </li>
       <li class="header__list-item linkanimation">
-        <a class="header__list-link " href="">Book with us</a>
+        <a class="header__list-link " href="#book">Book with us</a>
       </li>
       <li class="header__list-item linkanimation">
-        <a class="header__list-link " href="">Why lux trips</a>
+        <a class="header__list-link " href="#why">Why lux trips</a>
       </li>
       <li class="header__list-item linkanimation">
-        <a class="header__list-link " href="">Contacts</a>
+        <a class="header__list-link " href="../info/info.html">Contacts</a>
       </li>
     </ul>
     <ul class="header__lang choice">
@@ -37,7 +37,7 @@
       <li class="header__lang-item ">|</li>
       <li class="header__lang-item choice__item">Ru</li>
     </ul>
-    <a class="header__btn btn" href="">Call me back</a>
+    <a class="header__btn btn" href="#callback">Call me back</a>
   </header>
   <section class="hero">
     <h1 class="hero_title">Extra<br>ordinary</h1>
@@ -286,7 +286,7 @@
 
     </div>
   </section>
-  <section class="luxury">
+  <section class="luxury" id="luxpack">
     <div class="luxury__bg-top"></div>
     <img class="luxury__bg-img" src="../assets/img/pack-bg.png" alt="luxury section sea image">
     <div class="luxury__bg-img_grad"></div>
@@ -295,7 +295,7 @@
       <div class="luxury__card">
         <h2 class="luxury__card-title title">Luxury
           Packages</h2>
-        <a class="luxury__card-link btn btn_white">View all</a>
+        <a class="luxury__card-link btn btn_white" href="../luxury/luxury.html">View all</a>
       </div>
       <div class="luxury__card">
         <div class="luxury__card-bg"></div>
@@ -335,7 +335,7 @@
       </div>
     </div>
   </section>
-  <section class="book">
+  <section class="book" id="book">
     <div class="book__bg"></div>
     <h2 class="book__title title">Book
       With Us</h2>
@@ -372,7 +372,7 @@
       </div>
     </div>
   </section>
-  <section class="why">
+  <section class="why" id="why">
     <div class="why__bg">
       <div class="why__bg-top"></div>
       <img class="why__bg-img" src="../assets/img/whybg.png" alt="wy section mountain image">
@@ -402,13 +402,13 @@
     </div>
 
   </section>
-  <section class="contact">
+  <section class="contact" id="callback">
     <div class="contact__bg-top"></div>
     <img class="contact__bg" src="../assets/img/contactbg.png" alt="Contact backgroud image">
     <div class="contact__bg-bottom"></div>
     <div class="contact__wrapper frame">
       <div class="contact__box">
-        <p class="contact__title title">Contact</p>
+        <h2 class="contact__title title">Contact</h2>
         <form class="contact__form" action="" name="contact" method="post">
           <input class="contact__name" type="text" placeholder="Name" autocomplete="on" pattern="[A-Za-zА-Яа-яЁё]{2,20}"
             title="Name (from 2 to 20 letters)" required>
@@ -426,16 +426,20 @@
       <img class="footer__logo" src="../assets/svg/footer-logo.svg" alt="footer logo">
       <ul class="footer__list">
         <li class="footer__list-item">
-          <a class="footer__list-link  href=""> Luxury packages</a> </li>
+          <a class="footer__list-link" href="#luxpack"> Luxury packages</a>
+        </li>
         <li class=" footer__list-item">
-            <a class="footer__list-link  href=""> Book with us</a> </li>
+          <a class="footer__list-link" href="#book"> Book with us</a>
+        </li>
         <li class=" footer__list-item ">
-          <a class=" footer__list-link btn" href=""> Call me back</a>
+          <a class=" footer__list-link btn" href="#callback"> Call me back</a>
         </li>
         <li class="footer__list-item">
-          <a class="footer__list-link  href=""> Why Lux Trips</a></li>
+          <a class="footer__list-link" href="#why"> Why Lux Trips</a>
+        </li>
         <li class=" footer__list-item">
-            <a class="footer__list-link  href=""> Contact</a> </li>
+          <a class="footer__list-link" href="../info/info.html"> Contact</a>
+        </li>
       </ul>
     </div>
   </footer>
