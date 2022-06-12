@@ -121,12 +121,14 @@ h2 {
   border: 1px #fff solid;
   padding: 11px 25px;
   text-transform: uppercase;
+  color: #fff;
 }
 .btn:hover {
   background-color: #e2d3ce;
   border-color: #0c0b10;
-  -webkit-transition: 0.65s;
-  transition: 0.65s;
+  color: #0c0b10;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn_white {
@@ -360,8 +362,8 @@ h2 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0b2034 100%);
 }
 .topplaces__card-img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -760,23 +762,23 @@ h2 {
   margin-bottom: 55px;
 }
 .contact__name::-webkit-input-placeholder, .contact__phone::-webkit-input-placeholder {
-  color: #fff;
+  color: #0c0b10;
   font-size: 24px;
 }
 .contact__name::-moz-placeholder, .contact__phone::-moz-placeholder {
-  color: #fff;
+  color: #0c0b10;
   font-size: 24px;
 }
 .contact__name:-ms-input-placeholder, .contact__phone:-ms-input-placeholder {
-  color: #fff;
+  color: #0c0b10;
   font-size: 24px;
 }
 .contact__name::-ms-input-placeholder, .contact__phone::-ms-input-placeholder {
-  color: #fff;
+  color: #0c0b10;
   font-size: 24px;
 }
 .contact__name::placeholder, .contact__phone::placeholder {
-  color: #fff;
+  color: #0c0b10;
   font-size: 24px;
 }
 .contact_btn {

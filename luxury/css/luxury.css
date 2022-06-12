@@ -121,12 +121,14 @@ h2 {
   border: 1px #fff solid;
   padding: 11px 25px;
   text-transform: uppercase;
+  color: #fff;
 }
 .btn:hover {
   background-color: #e2d3ce;
   border-color: #0c0b10;
-  -webkit-transition: 0.65s;
-  transition: 0.65s;
+  color: #0c0b10;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn_white {
@@ -341,7 +343,7 @@ h2 {
   /* .advice_box */
   position: relative;
   background: #e2d3ce;
-  padding: 150px 0;
+  padding: 50px 0;
   margin-top: -150px;
   /* .advice__title */
   /* .advice__img */

@@ -121,12 +121,14 @@ h2 {
   border: 1px #fff solid;
   padding: 11px 25px;
   text-transform: uppercase;
+  color: #fff;
 }
 .btn:hover {
   background-color: #e2d3ce;
   border-color: #0c0b10;
-  -webkit-transition: 0.65s;
-  transition: 0.65s;
+  color: #0c0b10;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .btn_white {
@@ -210,8 +212,7 @@ h2 {
   position: relative;
   z-index: 25;
   text-align: center;
-  margin: 200px 0 0;
-  padding: 0 0 100px;
+  margin: 125px 0 0;
   background: #e2d3ce;
   /* .info__title */
   /* .info__phone */
