@@ -255,6 +255,12 @@ h2 {
   .btn_black {
     padding: 5px 30px;
   }
+  .frame {
+    &::after {
+      height: 105%;
+      width: 96%;
+    }
+  }
 }
 
 @include bpmobile() {

@@ -232,6 +232,11 @@ h2 {
   .btn_black {
     padding: 5px 30px;
   }
+
+  .frame::after {
+    height: 105%;
+    width: 96%;
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
