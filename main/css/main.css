@@ -1853,6 +1853,8 @@ h2 {
   margin-top: 265px;
   height: 870px;
   /* .contact__box */
+  /* .contact__phone */
+  /* .contact_btn */
 }
 .contact__bg {
   position: absolute;
@@ -1896,6 +1898,49 @@ h2 {
           flex-direction: column;
   max-width: 350px;
   margin: 85px auto 0;
+}
+.contact__title {
+  margin-bottom: 30px;
+}
+.contact__name, .contact__phone {
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  border-radius: 50px;
+  border: 1px #fff solid;
+  color: #0c0b10;
+  background: rgba(255, 255, 255, 0.14);
+}
+.contact__name {
+  margin-bottom: 15px;
+}
+.contact__phone {
+  margin-bottom: 55px;
+}
+.contact__name::-webkit-input-placeholder, .contact__phone::-webkit-input-placeholder {
+  color: #0c0b10;
+  font-size: 24px;
+}
+.contact__name::-moz-placeholder, .contact__phone::-moz-placeholder {
+  color: #0c0b10;
+  font-size: 24px;
+}
+.contact__name:-ms-input-placeholder, .contact__phone:-ms-input-placeholder {
+  color: #0c0b10;
+  font-size: 24px;
+}
+.contact__name::-ms-input-placeholder, .contact__phone::-ms-input-placeholder {
+  color: #0c0b10;
+  font-size: 24px;
+}
+.contact__name::placeholder, .contact__phone::placeholder {
+  color: #0c0b10;
+  font-size: 24px;
+}
+.contact_btn {
+  width: 100%;
+  height: 55px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1439px) {
