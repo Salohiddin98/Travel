@@ -270,7 +270,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1440px;
+  width: 100%;
   padding: 0 45px;
   top: 25px;
   text-transform: uppercase;
@@ -293,7 +293,6 @@ h2 {
 @media screen and (max-width: 1439px) {
   .header {
     /* .header__logo */
-    width: 100%;
     padding: 0 20px;
     /* .header__list */
   }
@@ -310,7 +309,6 @@ h2 {
 @media screen and (max-width: 1023px) {
   .header {
     /* .header__logo */
-    width: 100%;
     padding: 0 10px;
     font-size: 12px;
     /* .header__list */
@@ -343,7 +341,7 @@ h2 {
   }
 }
 .burger {
-  display: block;
+  display: none;
 }
 .burger__icon {
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
@@ -1041,7 +1039,7 @@ h2 {
   position: relative;
   z-index: 25;
   margin: 325px auto 0;
-  max-width: 1110px;
+  width: 100%;
   /* .book__box */
   /* .book__card */
   /* .book__text */
@@ -1049,9 +1047,8 @@ h2 {
 .book__bg {
   position: absolute;
   background: #e2d3ce;
-  width: 1440px;
+  width: 100%;
   height: 470px;
-  right: -165px;
   top: 375px;
   z-index: 1;
 }
@@ -1062,7 +1059,8 @@ h2 {
   margin-bottom: 80px;
 }
 .book__box {
-  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1116,19 +1114,19 @@ h2 {
   .book {
     /* .book__title */
     margin: 250px auto 0;
-    max-width: 730px;
+    max-width: 1024px;
     /* .book__box */
   }
   .book__bg {
-    width: 1024px;
+    width: 100%;
     height: 295px;
-    right: -147px;
     top: 334px;
   }
   .book__title {
     margin-bottom: 50px;
   }
   .book__box {
+    max-width: 730px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1170,6 +1168,11 @@ h2 {
     left: 9%;
   }
 }
+@media screen and (max-width: 1023px) {
+  .book {
+    max-width: 768px;
+  }
+}
 .why {
   /* .why__bg */
   position: relative;
@@ -1190,7 +1193,7 @@ h2 {
 }
 .why__bg {
   position: absolute;
-  top: -125px;
+  top: -101px;
   z-index: -1;
 }
 .why__bg-img {

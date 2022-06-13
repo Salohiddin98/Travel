@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   padding: 0 45px;
   top: 25px;
   text-transform: uppercase;
@@ -26,7 +26,7 @@
 @include bpnetbook() {
   .header {
     /* .header__logo */
-    width: 100%;
+    // width: 1024px;
     padding: 0 20px;
 
     &__logo-img {
@@ -43,7 +43,7 @@
 @include bptablet() {
   .header {
     /* .header__logo */
-    width: 100%;
+    // width: 100%;
     padding: 0 10px;
     font-size: 12px;
 
