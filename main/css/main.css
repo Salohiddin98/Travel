@@ -2133,6 +2133,10 @@ h2 {
     height: 150px;
     top: -155px;
   }
+  .footer__logo {
+    margin: 0 45.5% 30px;
+    max-width: 125px;
+  }
 }
 @media screen and (max-width: 1023px) {
   .footer {
