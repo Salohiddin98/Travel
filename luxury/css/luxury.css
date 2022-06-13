@@ -369,7 +369,6 @@ h2 {
       flex-wrap: wrap;
   gap: 30px;
   overflow: hidden;
-  display: none;
 }
 .topplaces__uz {
   display: -webkit-box;
@@ -380,6 +379,9 @@ h2 {
       flex-wrap: wrap;
   gap: 30px;
   overflow: hidden;
+}
+.topplaces_inactive {
+  display: none;
 }
 .topplaces__card-items {
   position: relative;

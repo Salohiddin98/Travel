@@ -765,6 +765,7 @@ h2 {
   margin-bottom: 50px;
 }
 .topplaces__content {
+  position: relative;
   max-width: 1110px;
   margin: 0 auto;
   font-size: 28px;
@@ -793,12 +794,12 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
   overflow: hidden;
+}
+.topplaces_inactive {
   display: none;
 }
 .topplaces__card-items {
@@ -841,7 +842,7 @@ h2 {
   width: 100%;
   height: 100%;
 }
-.topplaces__card-img:hover {
+.topplaces__card-items:hover .topplaces__card-img {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: 1s;
@@ -973,7 +974,6 @@ h2 {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
-    display: none;
   }
   .topplaces__card-items {
     width: 175px;
@@ -1038,7 +1038,6 @@ h2 {
     -webkit-column-gap: 10px;
        -moz-column-gap: 10px;
             column-gap: 10px;
-    display: none;
   }
   .topplaces__card-items {
     width: 175px;
