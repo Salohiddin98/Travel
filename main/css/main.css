@@ -1903,7 +1903,7 @@ h2 {
   height: 55px;
   border-radius: 50px;
   border: 1px #fff solid;
-  color: #0c0b10;
+  color: #fff;
   background: rgba(255, 255, 255, 0.14);
 }
 .contact__name {
@@ -1913,24 +1913,41 @@ h2 {
   margin-bottom: 55px;
 }
 .contact__name::-webkit-input-placeholder, .contact__phone::-webkit-input-placeholder {
-  color: #0c0b10;
+  color: #fff;
   font-size: 24px;
+  position: relative;
+  z-index: 25;
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
 }
 .contact__name::-moz-placeholder, .contact__phone::-moz-placeholder {
-  color: #0c0b10;
+  color: #fff;
   font-size: 24px;
+  position: relative;
+  z-index: 25;
+  backdrop-filter: unset;
 }
 .contact__name:-ms-input-placeholder, .contact__phone:-ms-input-placeholder {
-  color: #0c0b10;
+  color: #fff;
   font-size: 24px;
+  position: relative;
+  z-index: 25;
+  backdrop-filter: unset;
 }
 .contact__name::-ms-input-placeholder, .contact__phone::-ms-input-placeholder {
-  color: #0c0b10;
+  color: #fff;
   font-size: 24px;
+  position: relative;
+  z-index: 25;
+  backdrop-filter: unset;
 }
 .contact__name::placeholder, .contact__phone::placeholder {
-  color: #0c0b10;
+  color: #fff;
   font-size: 24px;
+  position: relative;
+  z-index: 25;
+  -webkit-backdrop-filter: unset;
+          backdrop-filter: unset;
 }
 .contact_btn {
   width: 100%;
@@ -2081,7 +2098,7 @@ h2 {
     height: 35px;
     border-radius: 50px;
     border: 1px #fff solid;
-    color: #0c0b10;
+    color: #fff;
     background: rgba(255, 255, 255, 0.14);
     font-size: 24px;
   }
@@ -2092,23 +2109,23 @@ h2 {
     margin-bottom: 25px;
   }
   .contact__name::-webkit-input-placeholder, .contact__phone::-webkit-input-placeholder {
-    color: #0c0b10;
+    color: #fff;
     font-size: 24px;
   }
   .contact__name::-moz-placeholder, .contact__phone::-moz-placeholder {
-    color: #0c0b10;
+    color: #fff;
     font-size: 24px;
   }
   .contact__name:-ms-input-placeholder, .contact__phone:-ms-input-placeholder {
-    color: #0c0b10;
+    color: #fff;
     font-size: 24px;
   }
   .contact__name::-ms-input-placeholder, .contact__phone::-ms-input-placeholder {
-    color: #0c0b10;
+    color: #fff;
     font-size: 24px;
   }
   .contact__name::placeholder, .contact__phone::placeholder {
-    color: #0c0b10;
+    color: #fff;
     font-size: 24px;
   }
   .contact_btn {
