@@ -123,7 +123,6 @@
 @include bptablet() {
   .hero {
     &_title {
-      max-width: 835px;
       font-size: 88px;
       line-height: 70px;
       top: 20%;
@@ -165,4 +164,47 @@
 }
 
 @include bpmobile() {
+  .hero {
+    &_title {
+      font-size: 42px;
+      line-height: 30px;
+      top: 21%;
+      left: 14%;
+    }
+
+    /* .hero__subtitle */
+
+    &__subtitle {
+      font-size: 28px;
+      top: 50%;
+      left: 30%;
+    }
+
+    /* .hero__img */
+
+    &__img {
+      height: 212px;
+    }
+
+    /* .hero__img-item */
+
+    &__img-item {
+      left: 0;
+      bottom: 0;
+    }
+    &__img-item:nth-child(4) {
+      z-index: 20;
+      bottom: 5px;
+    }
+    &__rhombus {
+      top: 25%;
+      left: 15%;
+    }
+
+    &__gradient {
+      height: 80px;
+      bottom: 0px;
+      background: $block-grad;
+    }
+  }
 }

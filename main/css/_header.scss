@@ -26,7 +26,7 @@
 @include bpnetbook() {
   .header {
     /* .header__logo */
-    // width: 1024px;
+
     padding: 0 20px;
 
     &__logo-img {
@@ -43,7 +43,7 @@
 @include bptablet() {
   .header {
     /* .header__logo */
-    // width: 100%;
+
     padding: 0 10px;
     font-size: 12px;
 
@@ -61,8 +61,8 @@
 @include bpmobile() {
   .header {
     /* .header__logo */
-    width: 100%;
-    padding: 0 5px;
+    top: 5px;
+    padding: 0 10px;
     font-size: 12px;
 
     &__logo-img {

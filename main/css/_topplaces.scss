@@ -293,4 +293,47 @@
 }
 
 @include bpmobile() {
+  .topplaces {
+    /* .topplaces__title */
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    /* .topplaces__box */
+
+    &__content {
+      max-width: 300px;
+      font-size: 20px;
+    }
+
+    &__dir {
+      max-width: 200px;
+      justify-content: space-around;
+      margin-bottom: 35px;
+    }
+
+    &__world {
+      width: 60%;
+      margin: 0 auto;
+      // flex-wrap: wrap;
+      column-gap: 5px;
+      overflow: hidden;
+      // display: none;
+    }
+
+    /* .topplaces__card-uz */
+
+    &__uz {
+      width: 60%;
+      margin: 0 auto;
+      // flex-wrap: wrap;
+      column-gap: 10px;
+      display: none;
+    }
+    &__card-items {
+      width: 175px;
+      height: 275px;
+    }
+  }
 }

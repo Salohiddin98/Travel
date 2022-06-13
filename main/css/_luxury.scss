@@ -209,4 +209,88 @@
 }
 
 @include bpmobile() {
+  .luxury {
+    /* .luxury__bg-top */
+
+    &__bg-top {
+      height: 825px;
+      top: -25px;
+    }
+
+    &__bg-img {
+      bottom: -185px;
+    }
+
+    /* .luxury__bg-bottom */
+
+    &__bg-img_grad {
+      height: 300px;
+      bottom: -100px;
+    }
+    &__bg-bottom {
+      width: 100%;
+      height: 50px;
+      bottom: -185px;
+    }
+
+    &__box {
+      max-width: 310px;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* .luxury__card */
+
+    &__card {
+      width: 145px;
+      max-height: 240px;
+    }
+
+    &__card:nth-child(1) {
+      width: 100%;
+      height: 150px;
+    }
+    &__card:nth-child(2) {
+      margin-top: 0px;
+    }
+    &__card:nth-child(4),
+    &__card:nth-child(6) {
+      margin-top: 0px;
+    }
+
+    &__card-title {
+      max-width: 40%;
+      text-align: center;
+      margin: 0px auto 10px;
+    }
+
+    &__card-link {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+    }
+    &__card-img {
+      height: 100%;
+    }
+
+    &__card-rhombus {
+      height: 20px;
+      width: 38px;
+
+      top: 70%;
+
+      &__card:nth-child(2) {
+        margin-top: 0;
+      }
+      &__card:nth-child(4),
+      &__card:nth-child(6) {
+        margin-top: 0;
+      }
+    }
+
+    &__card-text {
+      margin: 15px 10px 0;
+      font-size: 20px;
+    }
+  }
 }

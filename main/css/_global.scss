@@ -215,7 +215,6 @@ h2 {
   .title {
     font-size: 50px;
     line-height: 58px;
-    color: $text1;
   }
   .btn {
     padding: 6px 15px;
@@ -244,7 +243,6 @@ h2 {
   .title {
     font-size: 40px;
     line-height: 38px;
-    color: $text1;
   }
   .btn {
     padding: 6px 15px;
@@ -268,16 +266,38 @@ h2 {
     max-width: 320px;
   }
 
+  .title {
+    font-size: 28px;
+    line-height: 24x;
+  }
+
+  .rhombus-horiz {
+    height: 50px;
+    width: 77px;
+    backdrop-filter: blur(1.5px);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(-20deg) skew(50deg) translate(50%, 50%);
+  }
+
+  .choice {
+    display: flex;
+    column-gap: 3px;
+
+    &__item {
+      cursor: pointer;
+      padding: 0 2px;
+    }
+  }
   .btn {
-    padding: 3px 8px;
+    padding: 2px 6px;
     font-size: 12px;
   }
   .btn_white {
-    padding: 3px 15px;
+    padding: 2px 10px;
     font-size: 12px;
   }
   .btn_black {
-    padding: 3px 15px;
+    padding: 2px 10px;
     font-size: 12px;
   }
 }
