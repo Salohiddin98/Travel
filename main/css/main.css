@@ -809,6 +809,7 @@ h2 {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .topplaces__card-items:hover {
   -webkit-transform: scale(0.95);
@@ -1353,12 +1354,6 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   z-index: 25;
-}
-.book__card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .book__text {
   position: absolute;
