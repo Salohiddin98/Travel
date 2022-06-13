@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 100%;
   padding: 0 45px;
   top: 25px;
   text-transform: uppercase;
@@ -12,7 +12,6 @@
 
   &__logo {
     max-height: 64px;
-    max-width: 121px;
   }
 
   /* .header__list */
@@ -21,5 +20,57 @@
     display: flex;
     width: 625px;
     justify-content: space-between;
+  }
+}
+
+@include bpnetbook() {
+  .header {
+    /* .header__logo */
+
+    padding: 0 20px;
+
+    &__logo-img {
+      max-height: 44px;
+    }
+    /* .header__list */
+    &__list {
+      display: flex;
+      width: 550px;
+    }
+  }
+}
+
+@include bptablet() {
+  .header {
+    /* .header__logo */
+
+    padding: 0 10px;
+    font-size: 12px;
+
+    &__logo-img {
+      max-height: 40px;
+    }
+    /* .header__list */
+    &__list {
+      display: flex;
+      width: 400px;
+    }
+  }
+}
+
+@include bpmobile() {
+  .header {
+    /* .header__logo */
+    top: 5px;
+    padding: 0 10px;
+    font-size: 12px;
+
+    &__logo-img {
+      max-height: 30px;
+    }
+    justify-content: space-between;
+    &__list {
+      display: none;
+    }
   }
 }

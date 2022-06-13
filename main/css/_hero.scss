@@ -43,7 +43,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1440px;
+    width: 100%;
   }
   &__img-item:nth-child(1) {
     z-index: 5;
@@ -73,5 +73,138 @@
     z-index: 50;
     bottom: 0%;
     background: $block-grad;
+  }
+}
+
+@include bpnetbook() {
+  .hero {
+    &_title {
+      max-width: 835px;
+      font-size: 148px;
+      line-height: 110px;
+      top: 17%;
+      left: 12%;
+    }
+
+    /* .hero__subtitle */
+
+    &__subtitle {
+      font-size: 110px;
+      top: 47%;
+      left: 28%;
+    }
+
+    /* .hero__img */
+
+    &__img {
+      height: 684px;
+    }
+
+    /* .hero__img-item */
+
+    &__img-item {
+      left: 0;
+      bottom: 0;
+    }
+
+    &__rhombus {
+      top: 32%;
+      left: 12%;
+    }
+
+    &__gradient {
+      height: 300px;
+      bottom: -5px;
+      background: $block-grad;
+    }
+  }
+}
+
+@include bptablet() {
+  .hero {
+    &_title {
+      font-size: 88px;
+      line-height: 70px;
+      top: 20%;
+      left: 22%;
+    }
+
+    /* .hero__subtitle */
+
+    &__subtitle {
+      font-size: 65px;
+      top: 47%;
+      left: 35%;
+    }
+
+    /* .hero__img */
+
+    &__img {
+      height: 512px;
+    }
+
+    /* .hero__img-item */
+
+    &__img-item {
+      left: 0;
+      bottom: 0;
+    }
+
+    &__rhombus {
+      top: 32%;
+      left: 15%;
+    }
+
+    &__gradient {
+      height: 300px;
+      bottom: -5px;
+      background: $block-grad;
+    }
+  }
+}
+
+@include bpmobile() {
+  .hero {
+    &_title {
+      font-size: 42px;
+      line-height: 30px;
+      top: 21%;
+      left: 14%;
+    }
+
+    /* .hero__subtitle */
+
+    &__subtitle {
+      font-size: 28px;
+      top: 50%;
+      left: 30%;
+    }
+
+    /* .hero__img */
+
+    &__img {
+      height: 212px;
+    }
+
+    /* .hero__img-item */
+
+    &__img-item {
+      left: 0;
+      bottom: 0;
+    }
+    &__img-item:nth-child(4) {
+      z-index: 20;
+      bottom: 5px;
+    }
+    &__rhombus {
+      top: 25%;
+      left: 15%;
+    }
+
+    &__gradient {
+      height: 80px;
+      bottom: 0px;
+      background: $block-grad;
+    }
   }
 }

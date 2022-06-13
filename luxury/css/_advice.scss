@@ -2,11 +2,11 @@
   /* .advice_box */
   position: relative;
   background: $maincol;
-  padding: 150px 0;
+  padding: 50px 0;
   margin-top: -150px;
 
   &_box {
-    max-width: $content;
+    max-width: 1110px;
     max-height: 565px;
     margin: 0 auto;
   }

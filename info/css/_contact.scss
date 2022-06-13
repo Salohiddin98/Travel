@@ -3,12 +3,11 @@
   position: relative;
   z-index: 25;
   text-align: center;
-  margin: 200px 0 0;
-  padding: 0 0 100px;
+  margin: 125px 0 0;
   background: $maincol;
   &__box {
     margin: 100px auto 0;
-    max-width: $content;
+    max-width: 1110px;
     display: flex;
     justify-content: space-between;
   }
