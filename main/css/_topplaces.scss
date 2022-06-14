@@ -20,6 +20,7 @@
     margin: 0 auto;
     font-size: 28px;
     overflow: hidden;
+    transition: 0.5s;
   }
 
   /* .topplaces__direction */
@@ -33,11 +34,16 @@
 
   &__prev,
   &__next {
+    display: block;
     position: absolute;
     top: 60%;
     z-index: 30;
   }
 
+  &__prev:hover,
+  &__next:hover {
+    cursor: pointer;
+  }
   &__prev {
     display: none;
     left: 7%;
@@ -53,6 +59,7 @@
     // flex-wrap: wrap;
     column-gap: 30px;
     overflow: hidden;
+    transition: 0.5s;
   }
 
   /* .topplaces__card-uz */

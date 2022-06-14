@@ -770,6 +770,8 @@ h2 {
   margin: 0 auto;
   font-size: 28px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .topplaces__dir {
   max-width: 300px;
@@ -780,9 +782,13 @@ h2 {
   margin-bottom: 50px;
 }
 .topplaces__prev, .topplaces__next {
+  display: block;
   position: absolute;
   top: 60%;
   z-index: 30;
+}
+.topplaces__prev:hover, .topplaces__next:hover {
+  cursor: pointer;
 }
 .topplaces__prev {
   display: none;
@@ -800,6 +806,8 @@ h2 {
      -moz-column-gap: 30px;
           column-gap: 30px;
   overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .topplaces__uz {
   display: -webkit-box;
