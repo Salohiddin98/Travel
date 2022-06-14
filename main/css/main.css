@@ -1947,8 +1947,9 @@ h2 {
   height: 55px;
   border-radius: 50px;
   border: 1px #fff solid;
-  color: #fff;
+  color: #0c0b10;
   background: rgba(255, 255, 255, 0.14);
+  font-size: 24px;
 }
 .contact__name {
   margin-bottom: 15px;
@@ -2019,7 +2020,7 @@ h2 {
     height: 200px;
   }
   .contact__bg-bottom {
-    height: 200px;
+    height: 150px;
     bottom: 0;
   }
   .contact__wrapper {
@@ -2142,9 +2143,7 @@ h2 {
     height: 35px;
     border-radius: 50px;
     border: 1px #fff solid;
-    color: #fff;
     background: rgba(255, 255, 255, 0.14);
-    font-size: 24px;
   }
   .contact__name {
     margin-bottom: 15px;

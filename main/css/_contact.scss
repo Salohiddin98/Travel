@@ -59,8 +59,9 @@
     height: 55px;
     border-radius: 50px;
     border: 1px $border solid;
-    color: $text2;
+    color: $text1;
     background: rgba(255, 255, 255, 0.14);
+    font-size: 24px;
   }
 
   &__name {
@@ -106,7 +107,7 @@
     }
 
     &__bg-bottom {
-      height: 200px;
+      height: 150px;
       bottom: 0;
     }
 
@@ -225,9 +226,8 @@
       height: 35px;
       border-radius: 50px;
       border: 1px $border solid;
-      color: $text2;
+
       background: rgba(255, 255, 255, 0.14);
-      font-size: 24px;
     }
 
     &__name {
