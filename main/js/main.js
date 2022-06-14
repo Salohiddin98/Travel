@@ -4,9 +4,11 @@ const topDirItems = topDir.querySelectorAll('.topplaces__dir-items');
 const world = top.querySelector('.topplaces__world');
 const worldCard = world.querySelectorAll('.topplaces__card-items');
 const uz = top.querySelector('.topplaces__uz');
+const uzCard = uz.querySelectorAll('.topplaces__card-items');
 const prev = top.querySelector('.topplaces__prev');
 const next = top.querySelector('.topplaces__next');
 
+//Topplaces slider
 function topplaces() {
   let i = 3;
   top.addEventListener('click', (e) => {
@@ -16,9 +18,10 @@ function topplaces() {
     ) {
       topDirItems[0].classList.add('choice__item_active');
       topDirItems[2].classList.remove('choice__item_active');
-
       world.classList.remove('topplaces_inactive');
       uz.classList.add('topplaces_inactive');
+      resetOrder();
+      i = 3;
     } else if (
       e.target.closest('.topplaces__dir-items') &&
       e.target.innerText == 'Uzbekistan'
@@ -27,15 +30,18 @@ function topplaces() {
       topDirItems[2].classList.add('choice__item_active');
       world.classList.add('topplaces_inactive');
       uz.classList.remove('topplaces_inactive');
+      resetOrder();
+      i = 3;
     } else if (e.target.closest('.topplaces__prev')) {
-      if (i === 3) {
+      if (i === 6) {
         prev.style.display = 'none';
-        changeOrder(i, i - 3);
-        console.log('prev i=' + i);
+        changeOrder(i - 6, i + 3);
+
+        console.log('prev i=' + i + ' if#1');
       } else {
         next.style.display = 'block';
         prev.style.display = 'block';
-        changeOrder(i, i - 3);
+        changeOrder(i - 6, i + 3);
         i -= 3;
         console.log('prev i=' + i);
       }
@@ -43,7 +49,8 @@ function topplaces() {
       if (i === 9) {
         next.style.display = 'none';
         changeOrder(i, i + 3);
-        console.log('next i=' + i);
+        i += 3;
+        console.log('next i=' + i + ' if#1');
       } else {
         prev.style.display = 'block';
         next.style.display = 'block';
@@ -53,15 +60,21 @@ function topplaces() {
       }
     }
   });
-}
-topplaces();
-
-function changeOrderj(i, j) {
-  for (let k = 0; k < worldCard.length; k++) {
-    if (k < j && k >= i) {
-      worldCard[k].style.order = -1;
-    } else {
-      worldCard[k].style = '';
+  function changeOrder(i, j) {
+    for (let k = 0; k < worldCard.length; k++) {
+      if (k < j && k >= i) {
+        uzCard[k].style.order = -1;
+        worldCard[k].style.order = -1;
+      } else {
+        worldCard[k].style = '';
+        uzCard[k].style = '';
+      }
     }
   }
+  function resetOrder() {
+    changeOrder(0, 3);
+    prev.style.display = 'none';
+    next.style.display = 'block';
+  }
 }
+topplaces();
