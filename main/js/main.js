@@ -9,9 +9,14 @@ const uzCard = uz.querySelectorAll('.topplaces__card-items');
 const prev = top.querySelector('.topplaces__prev');
 const next = top.querySelector('.topplaces__next');
 // Язык
+import { translate } from './translate.js';
 let defLang = '';
-let langEn = document.querySelector('.nav__lang-en');
-let langRu = document.querySelector('.nav__lang-ru');
+const lang = document.querySelector('.header__lang');
+
+const langBox = lang.querySelectorAll('.header__lang-item');
+const langEn = langBox[0];
+const langRu = langBox[2];
+const langUz = langBox[4];
 let dtext = document.querySelectorAll('[data-text]');
 
 //Topplaces слайдер
@@ -19,8 +24,10 @@ function topplaces() {
   let i = 3;
   top.addEventListener('click', (e) => {
     if (
-      e.target.closest('.topplaces__dir-items') &&
-      e.target.innerText == 'World'
+      (e.target.closest('.topplaces__dir-items') &&
+        e.target.innerText == 'World') ||
+      e.target.innerText == 'Мир' ||
+      e.target.innerText == 'Dunyo'
     ) {
       topDirItems[0].classList.add('choice__item_active');
       topDirItems[2].classList.remove('choice__item_active');
@@ -29,8 +36,10 @@ function topplaces() {
       resetOrder();
       i = 3;
     } else if (
-      e.target.closest('.topplaces__dir-items') &&
-      e.target.innerText == 'Uzbekistan'
+      (e.target.closest('.topplaces__dir-items') &&
+        e.target.innerText == 'Uzbekistan') ||
+      e.target.innerText == 'Узбекистан' ||
+      e.target.innerText == 'O`zbekiston'
     ) {
       topDirItems[0].classList.remove('choice__item_active');
       topDirItems[2].classList.add('choice__item_active');
@@ -82,42 +91,67 @@ function topplaces() {
 topplaces();
 
 //Cмена языка
+document.addEventListener('DOMContentLoaded', function () {
+  defLang = localStorage.getItem('defLang');
+  langClick(defLang);
+});
 function changeLang() {
-  const { en, ru } = i18Obj;
-  let darr = [];
-  dtext.forEach((item) => {
-    darr.push(item.dataset.text);
-  });
-  document.addEventListener('DOMContentLoaded', function () {
-    defLang = localStorage.getItem('defLang');
-    if (defLang === 'en') {
-      changeEn();
-    } else {
-      changeRu();
+  lang.addEventListener('click', (e) => {
+    if (e.target.innerHTML === 'En') {
+      langClick('en');
+    } else if (e.target.innerHTML === 'Ru') {
+      langClick('ru');
+    } else if (e.target.innerHTML === 'Uz') {
+      langClick('uz');
     }
   });
-
-  langRu.addEventListener('click', function () {
-    localStorage.setItem('defLang', 'ru');
-    changeRu();
-  });
-  langEn.addEventListener('click', function () {
-    localStorage.setItem('defLang', 'en');
-    changeEn();
-  });
-  function changeRu() {
-    langRu.classList.add('lang-active');
-    langEn.classList.remove('lang-active');
-    for (let i = 0; i < darr.length; i++) {
-      dtext[i].innerHTML = ru[darr[i]];
-    }
-  }
-  function changeEn() {
-    langEn.classList.add('lang-active');
-    langRu.classList.remove('lang-active');
-    for (let i = 0; i < darr.length; i++) {
-      dtext[i].innerHTML = en[darr[i]];
-    }
-  }
 }
 changeLang();
+
+function langClick(str) {
+  const name = document.querySelector('.contact__name');
+  const phone = document.querySelector('.contact__phone');
+  const button = document.querySelector('.contact_btn');
+  const { en, ru, uz } = translate;
+  langBox.forEach((item) => {
+    item.classList.remove('choice__item_active');
+  });
+  if (str === 'en') {
+    langEn.classList.add('choice__item_active');
+    localStorage.setItem('defLang', 'en');
+    name.placeholder = 'Name';
+    phone.placeholder = 'Phone';
+    button.value = 'Call me back';
+  } else if (str === 'ru') {
+    langRu.classList.add('choice__item_active');
+    localStorage.setItem('defLang', 'ru');
+    name.placeholder = 'Имя';
+    phone.placeholder = 'Номер';
+    button.value = 'Отправить';
+  } else {
+    localStorage.setItem('defLang', 'uz');
+    name.placeholder = 'Ism';
+    phone.placeholder = 'Telefon';
+    button.value = 'Tasdiqlash';
+    langUz.classList.add('choice__item_active');
+  }
+  for (let i = 0; i < dtext.length; i++) {
+    str === 'en'
+      ? (dtext[i].innerHTML = en[i])
+      : str === 'ru'
+      ? (dtext[i].innerHTML = ru[i])
+      : (dtext[i].innerHTML = uz[i]);
+  }
+}
+// let obj = {};
+// for (let i = 0; i < dtext.length; i++) {
+//   dtext[i].innerHTML = ru[i];
+// }
+// console.log(obj);
+
+// langRu.addEventListener('click', function () {
+//   localStorage.setItem('defLang', 'ru');
+// });
+// langEn.addEventListener('click', function () {
+//   localStorage.setItem('defLang', 'en');
+// });
