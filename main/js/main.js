@@ -41,28 +41,24 @@ function topplaces() {
     } else if (e.target.closest('.topplaces__prev')) {
       if (i === 6) {
         prev.style.display = 'none';
-        changeOrder(i - 6, i + 3);
-
-        console.log('prev i=' + i + ' if#1');
+        changeOrder(0, 3);
+        i = 3;
       } else {
         next.style.display = 'block';
         prev.style.display = 'block';
-        changeOrder(i - 6, i + 3);
+        changeOrder(i - 6, i - 3);
         i -= 3;
-        console.log('prev i=' + i);
       }
     } else if (e.target.closest('.topplaces__next')) {
       if (i === 9) {
         next.style.display = 'none';
         changeOrder(i, i + 3);
-        i += 3;
-        console.log('next i=' + i + ' if#1');
+        i = 12;
       } else {
         prev.style.display = 'block';
         next.style.display = 'block';
         changeOrder(i, i + 3);
         i += 3;
-        console.log('next i=' + i);
       }
     }
   });
