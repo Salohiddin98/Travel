@@ -2,7 +2,8 @@
   /* .topplaces__title */
   background: $maincol;
   margin-bottom: 125px;
-  z-index: 25;
+
+  position: relative;
 
   &__title {
     max-width: 300px;
@@ -14,10 +15,12 @@
   /* .topplaces__box */
 
   &__content {
+    position: relative;
     max-width: 1110px;
     margin: 0 auto;
     font-size: 28px;
     overflow: hidden;
+    transition: 0.5s;
   }
 
   /* .topplaces__direction */
@@ -29,15 +32,34 @@
     margin-bottom: 50px;
   }
 
-  /* .topplaces__card-world */
+  &__prev,
+  &__next {
+    display: block;
+    position: absolute;
+    top: 60%;
+    z-index: 30;
+  }
 
+  &__prev:hover,
+  &__next:hover {
+    cursor: pointer;
+  }
+  &__prev {
+    display: none;
+    left: 7%;
+  }
+
+  &__next {
+    right: 7%;
+  }
+  /* .topplaces__card-world */
   &__world {
     display: flex;
     width: 100%;
     // flex-wrap: wrap;
     column-gap: 30px;
     overflow: hidden;
-    // display: none;
+    transition: 0.5s;
   }
 
   /* .topplaces__card-uz */
@@ -45,12 +67,13 @@
   &__uz {
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     column-gap: 30px;
     overflow: hidden;
+  }
+  &_inactive {
     display: none;
   }
-
   /* .topplaces__card-items */
 
   &__card-items {
@@ -87,7 +110,7 @@
     height: 100%;
   }
 
-  &__card-img:hover {
+  &__card-items:hover &__card-img {
     transform: scale(1.25);
     transition: 1s;
   }
@@ -155,13 +178,27 @@
       font-size: 24px;
     }
 
+    &__prev,
+    &__next {
+      top: 67%;
+      z-index: 30;
+    }
+
+    &__prev {
+      display: none;
+      left: 18%;
+    }
+
+    &__next {
+      right: 18%;
+    }
+
     &__world {
       width: 75%;
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 10px;
       overflow: hidden;
-      // display: none;
     }
 
     /* .topplaces__card-uz */
@@ -171,7 +208,6 @@
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 10px;
-      // display: none;
     }
 
     &__card-items {
@@ -233,13 +269,28 @@
     &__content {
       font-size: 24px;
     }
+
+    &__prev,
+    &__next {
+      top: 67%;
+      z-index: 30;
+    }
+
+    &__prev {
+      display: none;
+      left: 8%;
+    }
+
+    &__next {
+      right: 8%;
+    }
+
     &__world {
       width: 75%;
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 10px;
       overflow: hidden;
-      // display: none;
     }
 
     /* .topplaces__card-uz */
@@ -249,7 +300,6 @@
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 10px;
-      display: none;
     }
     &__card-items {
       width: 175px;
@@ -314,13 +364,27 @@
       margin-bottom: 35px;
     }
 
+    &__prev,
+    &__next {
+      top: 60%;
+      z-index: 30;
+    }
+
+    &__prev {
+      display: none;
+      left: 8%;
+    }
+
+    &__next {
+      right: 8%;
+    }
+
     &__world {
       width: 60%;
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 5px;
       overflow: hidden;
-      // display: none;
     }
 
     /* .topplaces__card-uz */
@@ -330,7 +394,6 @@
       margin: 0 auto;
       // flex-wrap: wrap;
       column-gap: 10px;
-      display: none;
     }
     &__card-items {
       width: 175px;

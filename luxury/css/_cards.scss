@@ -39,7 +39,6 @@
     flex-wrap: wrap;
     gap: 30px;
     overflow: hidden;
-    display: none;
   }
 
   /* .topplaces__card-uz */
@@ -50,9 +49,10 @@
     flex-wrap: wrap;
     gap: 30px;
     overflow: hidden;
-    // display: none;
   }
-
+  &_inactive {
+    display: none;
+  }
   /* .topplaces__card-items */
 
   &__card-items {
