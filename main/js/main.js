@@ -1,3 +1,4 @@
+//Слайдер
 const top = document.querySelector('.topplaces');
 const topDir = top.querySelector('.topplaces__dir');
 const topDirItems = topDir.querySelectorAll('.topplaces__dir-items');
@@ -7,8 +8,13 @@ const uz = top.querySelector('.topplaces__uz');
 const uzCard = uz.querySelectorAll('.topplaces__card-items');
 const prev = top.querySelector('.topplaces__prev');
 const next = top.querySelector('.topplaces__next');
+// Язык
+let defLang = '';
+let langEn = document.querySelector('.nav__lang-en');
+let langRu = document.querySelector('.nav__lang-ru');
+let dtext = document.querySelectorAll('[data-text]');
 
-//Topplaces slider
+//Topplaces слайдер
 function topplaces() {
   let i = 3;
   top.addEventListener('click', (e) => {
@@ -78,3 +84,44 @@ function topplaces() {
   }
 }
 topplaces();
+
+//Cмена языка
+function changeLang() {
+  const { en, ru } = i18Obj;
+  let darr = [];
+  dtext.forEach((item) => {
+    darr.push(item.dataset.text);
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    defLang = localStorage.getItem('defLang');
+    if (defLang === 'en') {
+      changeEn();
+    } else {
+      changeRu();
+    }
+  });
+
+  langRu.addEventListener('click', function () {
+    localStorage.setItem('defLang', 'ru');
+    changeRu();
+  });
+  langEn.addEventListener('click', function () {
+    localStorage.setItem('defLang', 'en');
+    changeEn();
+  });
+  function changeRu() {
+    langRu.classList.add('lang-active');
+    langEn.classList.remove('lang-active');
+    for (let i = 0; i < darr.length; i++) {
+      dtext[i].innerHTML = ru[darr[i]];
+    }
+  }
+  function changeEn() {
+    langEn.classList.add('lang-active');
+    langRu.classList.remove('lang-active');
+    for (let i = 0; i < darr.length; i++) {
+      dtext[i].innerHTML = en[darr[i]];
+    }
+  }
+}
+changeLang();
