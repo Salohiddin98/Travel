@@ -912,15 +912,15 @@ h2 {
     font-size: 24px;
   }
   .topplaces__prev, .topplaces__next {
-    top: 65%;
+    top: 67%;
     z-index: 30;
   }
   .topplaces__prev {
     display: none;
-    left: 17%;
+    left: 18%;
   }
   .topplaces__next {
-    right: 17%;
+    right: 18%;
   }
   .topplaces__world {
     width: 75%;
@@ -982,6 +982,17 @@ h2 {
   }
   .topplaces__content {
     font-size: 24px;
+  }
+  .topplaces__prev, .topplaces__next {
+    top: 67%;
+    z-index: 30;
+  }
+  .topplaces__prev {
+    display: none;
+    left: 8%;
+  }
+  .topplaces__next {
+    right: 8%;
   }
   .topplaces__world {
     width: 75%;
@@ -1046,6 +1057,17 @@ h2 {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin-bottom: 35px;
+  }
+  .topplaces__prev, .topplaces__next {
+    top: 60%;
+    z-index: 30;
+  }
+  .topplaces__prev {
+    display: none;
+    left: 8%;
+  }
+  .topplaces__next {
+    right: 8%;
   }
   .topplaces__world {
     width: 60%;

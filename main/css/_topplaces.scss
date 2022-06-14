@@ -173,17 +173,17 @@
 
     &__prev,
     &__next {
-      top: 65%;
+      top: 67%;
       z-index: 30;
     }
 
     &__prev {
       display: none;
-      left: 17%;
+      left: 18%;
     }
 
     &__next {
-      right: 17%;
+      right: 18%;
     }
 
     &__world {
@@ -262,6 +262,22 @@
     &__content {
       font-size: 24px;
     }
+
+    &__prev,
+    &__next {
+      top: 67%;
+      z-index: 30;
+    }
+
+    &__prev {
+      display: none;
+      left: 8%;
+    }
+
+    &__next {
+      right: 8%;
+    }
+
     &__world {
       width: 75%;
       margin: 0 auto;
@@ -339,6 +355,21 @@
       max-width: 200px;
       justify-content: space-around;
       margin-bottom: 35px;
+    }
+
+    &__prev,
+    &__next {
+      top: 60%;
+      z-index: 30;
+    }
+
+    &__prev {
+      display: none;
+      left: 8%;
+    }
+
+    &__next {
+      right: 8%;
     }
 
     &__world {
