@@ -5,15 +5,6 @@
   margin: 325px auto 0;
   width: 100%;
 
-  &__bg {
-    position: absolute;
-    background: $maincol;
-    width: 100%;
-    height: 470px;
-    top: 375px;
-    z-index: 1;
-  }
-
   &__title {
     max-width: 185px;
     text-align: center;
@@ -81,12 +72,6 @@
     margin: 250px auto 0;
     max-width: 1024px;
 
-    &__bg {
-      width: 100%;
-      height: 295px;
-      top: 334px;
-    }
-
     &__title {
       margin-bottom: 50px;
     }
@@ -148,12 +133,6 @@
     /* .book__title */
     max-width: 320px;
     margin: 75px auto 0;
-
-    &__bg {
-      width: 100%;
-      height: 733px;
-      top: 110px;
-    }
 
     &__title {
       margin-bottom: 50px;
