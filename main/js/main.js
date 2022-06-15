@@ -148,10 +148,3 @@ function langClick(str) {
 //   dtext[i].innerHTML = ru[i];
 // }
 // console.log(obj);
-
-// langRu.addEventListener('click', function () {
-//   localStorage.setItem('defLang', 'ru');
-// });
-// langEn.addEventListener('click', function () {
-//   localStorage.setItem('defLang', 'en');
-// });
