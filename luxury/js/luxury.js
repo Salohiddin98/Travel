@@ -16,8 +16,10 @@ const langUz = langBox[4];
 let dtext = document.querySelectorAll('[data-text]');
 topDir.addEventListener('click', (e) => {
   if (
-    e.target.closest('.topplaces__dir-items') &&
-    e.target.innerText == 'World'
+    (e.target.closest('.topplaces__dir-items') &&
+      e.target.innerText == 'World') ||
+    e.target.innerText == 'Мир' ||
+    e.target.innerText == 'Dunyo'
   ) {
     topDirItems[0].classList.add('choice__item_active');
     topDirItems[2].classList.remove('choice__item_active');
@@ -25,8 +27,10 @@ topDir.addEventListener('click', (e) => {
     world.classList.remove('topplaces_inactive');
     uz.classList.add('topplaces_inactive');
   } else if (
-    e.target.closest('.topplaces__dir-items') &&
-    e.target.innerText == 'Uzbekistan'
+    (e.target.closest('.topplaces__dir-items') &&
+      e.target.innerText == 'Uzbekistan') ||
+    e.target.innerText == 'Узбекистан' ||
+    e.target.innerText == 'O`zbekiston'
   ) {
     topDirItems[0].classList.remove('choice__item_active');
     topDirItems[2].classList.add('choice__item_active');
